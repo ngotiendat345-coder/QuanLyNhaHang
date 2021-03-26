@@ -104,7 +104,7 @@ function hienThiDanhSach(danhSach){
     let html="";
     for(let value of danhSach){
         const {id,tenMon,loaiMon,giaMon,khuyenMai,tinhTrang,hinhAnh,moTa}=value;
-        html =`<tr>
+        html +=`<tr>
             <td>${id}</td>
             <td>${tenMon}</td>
             <td>${handleLoaiMon(loaiMon)}</td>
